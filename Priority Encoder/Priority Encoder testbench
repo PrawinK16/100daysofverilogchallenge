@@ -1,0 +1,14 @@
+module prienc_tb();
+
+reg [7:0]a;
+reg en;   
+wire [2:0]y;
+
+priorityenc p1(.a(a),.en(en),.out(y));
+
+initial 
+begin
+a=8'b00001000;
+en=1;
+end
+endmodule
