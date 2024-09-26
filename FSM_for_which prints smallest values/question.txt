@@ -1,0 +1,3 @@
+Design a FSM over {0,1,2,3} that will output the smallest input digit read so far. Write an RTL code and testbench for that design.
+
+e.g.. input: 111032 will produce output: 111000
