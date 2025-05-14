@@ -1,8 +1,9 @@
-module clock_divider(clk,clk2,clk4,clk8,rst);
-input clk,rst;
-reg [3:0]count;
-output clk2,clk4,clk8;
-reg clk2,clk4,clk8;
+module clock_divider(
+input clk,
+output reg clk2,clk4,clk8,
+input rst);
+
+  reg [3:0]count;
 always@(posedge clk)
 begin
 if(rst==0)
